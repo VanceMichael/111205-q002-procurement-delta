@@ -1,0 +1,64 @@
+{
+  "rounds": [
+    {
+      "scan": "first",
+      "complete": true,
+      "pages": [
+        [
+          {
+            "host": "a.example",
+            "id": "7",
+            "time": "2026-11-11T23:59:59+08:00",
+            "amount": "100.00"
+          }
+        ],
+        [
+          {
+            "host": "b.example",
+            "id": "7",
+            "time": "2026-11-11T23:59:59+08:00",
+            "amount": "90.00"
+          }
+        ]
+      ]
+    },
+    {
+      "scan": "drift",
+      "complete": false,
+      "pages": [
+        [
+          {
+            "host": "a.example",
+            "id": "8",
+            "corrects": "7",
+            "time": "2026-11-12T00:00:00+08:00",
+            "amount": "110.00"
+          }
+        ],
+        [
+          {
+            "host": "a.example",
+            "id": "7",
+            "time": "2026-11-11T23:59:59+08:00",
+            "amount": "100.00"
+          }
+        ]
+      ]
+    },
+    {
+      "scan": "final",
+      "complete": true,
+      "pages": [
+        [
+          {
+            "host": "a.example",
+            "id": "8",
+            "corrects": "7",
+            "time": "2026-11-12T00:00:00+08:00",
+            "amount": "110.00"
+          }
+        ]
+      ]
+    }
+  ]
+}
